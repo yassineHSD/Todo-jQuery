@@ -1,0 +1,108 @@
+/*
+Author:Yassine Ben Alaya
+yben-alaya@spartan.northampton.edu
+*/
+html{
+  background-color:#202020;
+}
+.inputArea {
+  display:inline;
+  padding:0 !important;
+}
+#listArea{
+  margin-top:30px;
+  width:calc(100% - 5.5px);
+}
+#listArea a.button{
+  border:0px;
+}
+a.button{
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.inputArea .button span{
+  vertical-align: middle;
+  padding-top: 12px;
+  display: center;
+  width: 20px;
+}
+a.button span{
+  transition: all 1s;
+}
+a.button:hover span{
+  transform:scale(1.5) rotate(360deg);
+}
+.inputArea *{
+  min-height:50px;
+  max-height:100px;
+  height:auto;
+}
+.inputArea input{
+  width:calc(100% - 60px);
+  border-radius: 3px;
+  border:0;
+  padding: 15px;
+  color:#303030 !important;
+  font-size:16px;
+}
+.inputArea a{
+  width:50px;
+  height:50px;
+}
+.task{
+  color:#ffffff;
+  padding-left:40px;
+  min-height:50px;
+  max-height:100px;
+  padding:0px;
+  border-radius:3px;
+  transition: background-color 1.5s,opacity 1.5s;
+}
+.task td.taskName{
+
+  padding: 10px !important;
+  max-width:calc(100% - 60px);
+}
+.even{
+  background-color:#030303;
+}
+.odd{
+  background-color:inherit;
+}
+.removeTask{
+  position: relative;
+  min-height:50px;
+  max-height:100px;
+  width:50px;
+
+}
+td.taskName +td {
+  position:absolute;
+  left:calc(100% - 80px);
+}
+
+.shakeEffect {
+ animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+ transform: translate3d(0, 0, 0);
+ backface-visibility: hidden;
+ perspective: 1000px;
+ background-color:#32a852;
+ opacity:0;
+}
+@keyframes shake {
+ 10%, 90% {
+   transform: translate3d(-1px, 0, 0);
+ }
+
+ 20%, 80% {
+   transform: translate3d(2px, 0, 0);
+ }
+
+ 30%, 50%, 70% {
+   transform: translate3d(-4px, 0, 0);
+ }
+
+ 40%, 60% {
+   transform: translate3d(4px, 0, 0);
+ }
+}

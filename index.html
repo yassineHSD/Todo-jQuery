@@ -1,0 +1,26 @@
+ <!DOCTYPE html>
+ <!--
+ Author:Yassine Ben Alaya
+ yben-alaya@spartan.northampton.edu
+ -->
+ <html lang="en" dir="ltr">
+   <head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+     <link rel="stylesheet" href="assets/css/style.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <title>Todo - App</title>
+     <script type="text/javascript" src="./assets/js/script.js"></script>
+   </head>
+   <body onload="loadTasksFromStorage()">
+     <section class="section">
+       <div class="inputArea">
+         <input  id="taskInput" type="text" placeholder="Add new task">
+         <a id="addTask" class="button is-black is-inverted is-outlined"><span>+</span></a>
+       </div>
+       <div id="listArea" class="">
+       </div>
+     </section>
+   </body>
+ </html>
